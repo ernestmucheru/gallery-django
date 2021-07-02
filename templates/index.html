@@ -1,25 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Font Awesome -->
-    <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    rel="stylesheet"/>
-    <!-- Google Fonts -->
-    <link
-    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-    rel="stylesheet"/>
-    <!-- MDB -->
-    <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
-    rel="stylesheet"/>
-</head>
+{% load static %}
+{% include "base.html" %}
+
 <body>
-    <!-- MDB -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+    <div style="height: 100vh">
+        <div class="flex-center flex-column">
+            <h1 class="animated fadeIn mb-2">Wacha Wapige Mdomo Nime Maintain</h1>
+            <h5 class="animated fadeIn mb-1">Sina Jooh Mayengs You're my Main Thing</h5>
+            <p class="animated fadeIn text-muted">Chini ya Maji</p>
+        </div>
+    </div>
+
+   {% include 'scripts.html' %}
 </body>
-</html>
