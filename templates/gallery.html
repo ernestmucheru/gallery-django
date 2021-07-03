@@ -12,72 +12,15 @@
 
     <!--Full width lightbox-->
     <div class="mdb-lightbox">
-
-      <figure class="col-md-3">
-        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(58).jpg" data-size="781x1172">
-          <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(58).jpg" class="img-fluid">
-        </a>
-      </figure>
-
-      <figure class="col-md-3">
-        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(61).jpg" data-size="781x1172">
-          <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(61).jpg" class="img-fluid">
-        </a>
-      </figure>
-
-      <figure class="col-md-3">
-        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(62).jpg" data-size="781x1172">
-          <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(62).jpg" class="img-fluid">
-        </a>
-      </figure>
-
-      <figure class="col-md-3">
-        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(60).jpg" data-size="781x1172">
-          <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(60).jpg" class="img-fluid">
-        </a>
-      </figure>
-
+      {% for img in images %}
       <figure class="col-md-4">
-        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(66).jpg" data-size="1600x1067">
-          <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(66).jpg" class="img-fluid">
+        <a href="{{img.image.url}}" data-size="781x1172">
+          <img src="{{img.image.url}}"  class="img-fluid" alt="{{img.alt}}">
         </a>
       </figure>
+      {% endfor %}
 
-      <figure class="col-md-4">
-        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(70).jpg" data-size="1600x1067">
-          <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(70).jpg" class="img-fluid">
-        </a>
-      </figure>
-
-      <figure class="col-md-4">
-        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(74).jpg" data-size="1600x1067">
-          <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(74).jpg" class="img-fluid">
-        </a>
-      </figure>
-
-      <figure class="col-md-3">
-        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(64).jpg" data-size="781x1172">
-          <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(64).jpg" class="img-fluid">
-        </a>
-      </figure>
-
-      <figure class="col-md-3">
-        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(77).jpg" data-size="781x1172">
-          <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(77).jpg" class="img-fluid">
-        </a>
-      </figure>
-
-      <figure class="col-md-3">
-        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(78).jpg" data-size="781x1172">
-          <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(78).jpg" class="img-fluid">
-        </a>
-      </figure>
-
-      <figure class="col-md-3">
-        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(76).jpg" data-size="781x1172">
-          <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(76).jpg" class="img-fluid">
-        </a>
-      </figure>
+      
 
     </div>
     <!--/Full width lightbox-->
