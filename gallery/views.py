@@ -15,9 +15,9 @@ def home(request):
         message = request.POST.get("message")
 
         email_message = EmailMessage(
-            subject = name + " : " + subject,
+            subject = name + " : " +subject,
             body = message,
-            to = ['ernest.mucheru@student.moringaschool.com'],
+            to = ['your gmail'],
             headers = {"Reply-To": email}
         )
         email_message.send()
