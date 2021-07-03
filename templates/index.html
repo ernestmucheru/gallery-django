@@ -5,12 +5,23 @@
 
 {% include "base.html" %}
 {% include "header.html" %}
+
 <body>
     <div class="container">
         <main>
             {% include "gallery.html" %}
-        </main>
+
     </div>
+
+    <div class="container">
+        {% include "about.html" %}
+        <hr class="between-sections">
+        {% include "contact.html" %}
+
+    </div>
+   
+    </main>
+    {% include "footer.html" %}
     {% include "scripts.html" %}
 </body>
 
