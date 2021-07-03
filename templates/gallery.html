@@ -15,7 +15,7 @@
       {% for img in images %}
       <figure class="col-md-4">
         <a href="{{img.image.url}}" data-size="781x1172">
-          <img src="{{img.image.url}}"  class="img-fluid" alt="{{img.alt}}">
+          <img src="{{img.image.url}}"  class="img-fluid" alt="{{img.alt}}" style="min-height:370px; max-height:370px; min-width:300px; max-width:300px">
         </a>
       </figure>
       {% endfor %}
