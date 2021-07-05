@@ -1,7 +1,11 @@
 from django.db import models
 
 # Create your models here.
+class Location(models.Model):
+    pin = models.CharField(max_length=100,null=False ,blank=False)
 
+    def __str__(self):
+        return self.pin
 
 class Category(models.Model):
     name = models.CharField(max_length=100,null=False ,blank=False)
@@ -14,6 +18,7 @@ class Images(models.Model):
     image = models.ImageField(upload_to="")
     description = models.TextField(max_length=500, null=False,blank=False)
     category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True)
+    location = models.ForeignKey(Location, on_delete=models.SET_NULL, null=True)
     
     def __str__(self):
         return self.alt
