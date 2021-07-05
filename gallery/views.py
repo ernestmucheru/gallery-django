@@ -17,9 +17,17 @@ def home(request):
         email = request.POST.get("email")
         subject =request.POST.get("subject")
         message = request.POST.get("message")
-        category = request.POST.get("category")
+        category = request.GET.get("category")
         location = request.POST.get("location")
 
+        if category == None:
+            images = Images.objects.all()
+        else:
+            images = Images.objects.filter(category__name=category)
+
+            categories = Category.objects.all()
+            images = Images.objects.all()
+            
         email_message = EmailMessage(
             subject = name + " : " +subject,
             body = message,
