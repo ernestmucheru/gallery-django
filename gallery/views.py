@@ -24,3 +24,10 @@ def home(request):
 
         
     return render(request, 'index.html',context)
+
+def gallery(request):
+    return render(request, 'gallery.html')
+def viewPhoto(request):
+    return render(request, 'photo.html')
+def addPhoto(request):
+    return render(request, 'add.html')
