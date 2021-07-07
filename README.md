@@ -1,4 +1,4 @@
-# PK Gallery
+# Gallery
 ## Description
 This is an app which users can view uploaded photos
 
