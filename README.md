@@ -3,7 +3,11 @@
 This is an app which users can view uploaded photos
 
 
-- The expanded image view.
+## Screenshots
+![Screenshot from 2021-07-06 16-09-20](https://user-images.githubusercontent.com/81610268/124711405-b4bcc500-df06-11eb-8f02-a83a499109d6.png)
+![Screenshot from 2021-07-06 16-09-26](https://user-images.githubusercontent.com/81610268/124711429-bc7c6980-df06-11eb-9ab9-2ec676ebb495.png)
+![Screenshot from 2021-07-06 16-16-03](https://user-images.githubusercontent.com/81610268/124711435-bedec380-df06-11eb-9e56-2df000cc6038.png)
+
 ## Setup/Installation
 On your terminal, clone the project.
     
@@ -49,7 +53,7 @@ Start the server.
 
 
 ## Known Bugs
-No known bugs.
+The copy link and filter by category function's is not working.
 ## Technologies Used
 - Django
 - Python 3.8.5
