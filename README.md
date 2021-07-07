@@ -34,6 +34,7 @@ DB_HOST='127.0.0.1'
 MODE='dev'
 ALLOWED_HOSTS='.localhost','.herokuapp.com','127.0.0.1'
 DISABLE_COLLECTSTATIC=1
+```
 
 Create the virtual environment and install the requirements from `requirements.txt`
 
@@ -51,7 +52,6 @@ Start the server.
 
     $ python3 manage.py runserver
 
-
 ## Known Bugs
 The copy link and filter by category function's is not working.
 ## Technologies Used
@@ -60,6 +60,9 @@ The copy link and filter by category function's is not working.
 - Postgresql
 - Cloudinary
 - Heroku
+
+
+
 ## Support and contact details
 If you have any suggestions, questions or in case of a fire, you can reach the developer via [email](mailto:erenestmucheru254@gmail.com).
 
